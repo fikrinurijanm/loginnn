@@ -107,19 +107,30 @@
              data-text="signin_with"
              data-size="large"
              data-logo_alignment="left">
-        </div>
-    </div>
+      </div>
+</div>
 
-    <div class="card profile-card" id="profileBox">
-        <div class="logo-container" style="width:70px; height:70px; margin-bottom:10px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Logo">
-        </div>
-        <h3 style="margin-top:0; color:#22c55e;">Login Berhasil!</h3>
-        <img id="avatar" class="user-avatar" src="" alt="Foto Profil">
-        <div id="name" class="user-name">Nama Pengguna</div>
-        <div id="email" class="user-email">email@gmail.com</div>
-        <button class="btn-logout" onclick="logout()">Keluar / Logout</button>
+<div class="card profile-card" id="profileBox" style="background-color: #ffffff !important; color: #1a1a1a !important; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <div class="logo-container" style="width:70px; height:70px; margin-bottom:10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Logo">
     </div>
+    
+    <h3 style="margin-top:0; color: #22c55e !important; font-weight: bold; font-size: 20px;">Autentikasi Berhasil!</h3>
+    
+    <img id="avatar" class="user-avatar" src="" alt="Foto Profil" style="border-radius: 50%; width: 60px; height: 60px; margin-bottom: 10px;">
+    
+    <div style="margin-bottom: 8px;">
+        <span style="font-weight: bold; color: #555555 !important;">Nama Lengkap:</span>
+        <div id="name" class="user-name" style="color: #1a1a1a !important; font-size: 16px; font-weight: 500;">Nama Pengguna</div>
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+        <span style="font-weight: bold; color: #555555 !important;">Alamat Email:</span>
+        <div id="email" class="user-email" style="color: #1a1a1a !important; font-size: 14px;">email@gmail.com</div>
+    </div>
+    
+    <button class="btn-logout" onclick="logout()" style="background-color: #ef4444; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer;">Keluar / Logout</button>
+</div>
 
     <script>
         // Fungsi membaca data rahasia dari Google (JWT Token)
